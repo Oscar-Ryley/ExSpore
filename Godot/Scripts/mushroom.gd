@@ -1,6 +1,7 @@
 extends TextureButton
 
 @export var mushroom = preload("res://Scenes/mushroom.tscn")
+@export var line = preload("res://Scenes/Connection_Line.tscn")
 @onready var connections = 0
 @onready var mushroom_array = []
 @onready var hover = false
@@ -21,10 +22,14 @@ func _process(_delta: float) -> void:
 		location_array.remove_at(0)
 		mushroom_array.append(obj)
 		add_child(obj)
-		#add_child(Line2D())
 		connections += 1
 		Global.points -= Global.cost
 		Global.cost += 15
+		var connection = line.instantiate()
+		connection.add_point(obj.position)
+		connection.add_point(self.position)
+		add_child(connection)
+
 
 func _on_mouse_entered() -> void:
 	hover = true

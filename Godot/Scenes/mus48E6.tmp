@@ -9,7 +9,6 @@ radius = 64.0
 height = 143.5
 
 [node name="Mushroom" type="Node2D"]
-z_index = 2
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
 gravity_scale = 0.0
