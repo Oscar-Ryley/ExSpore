@@ -7,8 +7,8 @@
 [node name="Mushroom" type="Node2D"]
 
 [node name="Mushroom" type="TextureButton" parent="."]
-offset_right = 300.0
-offset_bottom = 300.0
+offset_right = 128.0
+offset_bottom = 128.0
 texture_normal = ExtResource("1_beo4c")
 texture_pressed = ExtResource("2_7rhdv")
 script = ExtResource("1_4uteg")
