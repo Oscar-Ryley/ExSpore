@@ -2,13 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://b8go44wbak07y" path="res://Assets/Temp/placeholder_bg.png" id="1_ewy35"]
 [ext_resource type="Script" path="res://Scripts/points_display.gd" id="1_qhp3y"]
-[ext_resource type="FontFile" uid="uid://1oo8gfshrdx" path="res://Assets/Fonts/Gamja_Flower/GamjaFlower-Regular.ttf" id="2_mklco"]
 [ext_resource type="PackedScene" uid="uid://cvqrgpht3x5o0" path="res://Scenes/mushroom.tscn" id="2_w1ppx"]
-
-[sub_resource type="Theme" id="Theme_fb2mj"]
-default_font = ExtResource("2_mklco")
-default_font_size = 60
-RichTextLabel/colors/default_color = Color(0, 0, 0, 1)
+[ext_resource type="Theme" uid="uid://cqm3lugnxtx3s" path="res://Assets/Theme.tres" id="3_c48au"]
+[ext_resource type="Script" path="res://Scripts/connections_display.gd" id="5_fbx5n"]
 
 [node name="Connections_Screen" type="Node2D"]
 
@@ -24,9 +20,33 @@ position = Vector2(915, 454)
 [node name="HUD" type="Node2D" parent="."]
 
 [node name="Points_Display" type="RichTextLabel" parent="HUD"]
-offset_left = 22.0
-offset_top = 18.0
-offset_right = 293.0
-offset_bottom = 86.0
-theme = SubResource("Theme_fb2mj")
+offset_left = 188.0
+offset_top = 13.0
+offset_right = 459.0
+offset_bottom = 81.0
+theme = ExtResource("3_c48au")
 script = ExtResource("1_qhp3y")
+
+[node name="Connections_display" type="RichTextLabel" parent="HUD"]
+offset_left = 302.0
+offset_top = 78.0
+offset_right = 501.0
+offset_bottom = 147.0
+theme = ExtResource("3_c48au")
+script = ExtResource("5_fbx5n")
+
+[node name="Spores" type="Label" parent="HUD"]
+offset_left = 15.0
+offset_top = 13.0
+offset_right = 194.0
+offset_bottom = 74.0
+theme = ExtResource("3_c48au")
+text = "Spores: "
+
+[node name="Connections" type="Label" parent="HUD"]
+offset_left = 15.0
+offset_top = 75.0
+offset_right = 292.0
+offset_bottom = 136.0
+theme = ExtResource("3_c48au")
+text = "Connections:"
