@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cf3jiciq7peho"]
+[gd_scene load_steps=3 format=3 uid="uid://cf3jiciq7peho"]
 
 [ext_resource type="Script" path="res://Scripts/points_display.gd" id="1_qhp3y"]
+[ext_resource type="PackedScene" uid="uid://cvqrgpht3x5o0" path="res://Scenes/mushroom.tscn" id="2_w1ppx"]
 
 [node name="Connections-Screen" type="Node2D"]
 
@@ -8,3 +9,5 @@
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_qhp3y")
+
+[node name="Mushroom" parent="." instance=ExtResource("2_w1ppx")]
