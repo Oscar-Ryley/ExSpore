@@ -12,3 +12,6 @@ offset_bottom = 128.0
 texture_normal = ExtResource("1_beo4c")
 texture_pressed = ExtResource("2_7rhdv")
 script = ExtResource("1_4uteg")
+
+[connection signal="mouse_entered" from="Mushroom" to="Mushroom" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Mushroom" to="Mushroom" method="_on_mouse_exited"]
