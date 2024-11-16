@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxyc8c1uvsuy2"
-path="res://.godot/imported/Small Bob.png-b70e4a91699576a47c820d0d7aeb9eac.ctex"
+uid="uid://ca53ttmcrf0ys"
+path="res://.godot/imported/Untitled 9.png-146d33ea5b7d2d93ff67b5a7c895b9c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Mushrooms/Small Bob.png"
-dest_files=["res://.godot/imported/Small Bob.png-b70e4a91699576a47c820d0d7aeb9eac.ctex"]
+source_file="res://Assets/Temp/Untitled 9.png"
+dest_files=["res://.godot/imported/Untitled 9.png-146d33ea5b7d2d93ff67b5a7c895b9c6.ctex"]
 
 [params]
 
