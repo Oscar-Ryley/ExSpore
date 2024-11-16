@@ -36,6 +36,7 @@ func _process(_delta: float) -> void:
 		var connection = line.instantiate()
 		connection.add_point(obj.position)
 		connection.add_point(self.position)
+		connection.leaf_node_name = obj.get_instance_id()
 		add_child(connection)
 		Global.connections_no += 1
 	if connections > 1:
