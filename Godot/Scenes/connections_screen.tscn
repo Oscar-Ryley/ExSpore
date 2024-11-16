@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cf3jiciq7peho"]
+
+[ext_resource type="Script" path="res://Scripts/points_display.gd" id="1_qhp3y"]
+
+[node name="Connections-Screen" type="Node2D"]
+
+[node name="Points_Display" type="RichTextLabel" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_qhp3y")
