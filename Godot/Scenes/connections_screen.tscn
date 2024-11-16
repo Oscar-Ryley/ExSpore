@@ -21,9 +21,6 @@ texture = ExtResource("1_ewy35")
 [node name="Starting_Mushroom" parent="." instance=ExtResource("2_w1ppx")]
 position = Vector2(915, 454)
 
-[node name="Mushroom" parent="." instance=ExtResource("2_w1ppx")]
-position = Vector2(657, 464)
-
 [node name="HUD" type="Node2D" parent="."]
 
 [node name="Points_Display" type="RichTextLabel" parent="HUD"]
