@@ -1,0 +1,9 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cqm3lugnxtx3s"]
+
+[ext_resource type="FontFile" uid="uid://1oo8gfshrdx" path="res://Assets/Fonts/Gamja_Flower/GamjaFlower-Regular.ttf" id="1_pvk1m"]
+
+[resource]
+default_font = ExtResource("1_pvk1m")
+default_font_size = 60
+Label/colors/font_color = Color(0, 0, 0, 1)
+RichTextLabel/colors/default_color = Color(0, 0, 0, 1)
