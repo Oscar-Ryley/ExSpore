@@ -25,7 +25,8 @@ texture = ExtResource("2_q20jk")
 
 [node name="Sprite2D" type="Sprite2D" parent="Background"]
 z_index = -1
-position = Vector2(960, 540)
+position = Vector2(984, 534)
+scale = Vector2(1.01875, 1.01667)
 texture = ExtResource("1_t1bqx")
 
 [node name="Daisy2" type="Sprite2D" parent="Background"]
@@ -270,3 +271,12 @@ offset_bottom = 215.0
 theme = ExtResource("3_c48au")
 theme_override_font_sizes/normal_font_size = 40
 script = ExtResource("10_jycbj")
+
+[node name="Back" type="Button" parent="HUD"]
+offset_left = 1792.0
+offset_top = 929.0
+offset_right = 1893.0
+offset_bottom = 985.0
+text = "Back"
+
+[connection signal="pressed" from="HUD/Back" to="HUD/Points_Display" method="_on_back_pressed"]
