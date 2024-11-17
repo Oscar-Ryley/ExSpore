@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://cf3jiciq7peho"]
+
+[ext_resource type="Texture2D" uid="uid://ca53ttmcrf0ys" path="res://Assets/Temp/Untitled 9.png" id="1_0l41t"]
+[ext_resource type="Script" path="res://Scripts/points_display.gd" id="1_qhp3y"]
+[ext_resource type="PackedScene" uid="uid://cvqrgpht3x5o0" path="res://Scenes/mushroom.tscn" id="2_w1ppx"]
+[ext_resource type="Theme" uid="uid://cqm3lugnxtx3s" path="res://Assets/Theme.tres" id="3_c48au"]
+[ext_resource type="Script" path="res://Scripts/connections_display.gd" id="5_fbx5n"]
+
+[node name="Connections_Screen" type="Node2D"]
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Background"]
+position = Vector2(962, 538)
+texture = ExtResource("1_0l41t")
+
+[node name="Starting_Mushroom" parent="." instance=ExtResource("2_w1ppx")]
+position = Vector2(915, 454)
+
+[node name="HUD" type="Node2D" parent="."]
+
+[node name="Points_Display" type="RichTextLabel" parent="HUD"]
+offset_left = 188.0
+offset_top = 13.0
+offset_right = 999.0
+offset_bottom = 81.0
+theme = ExtResource("3_c48au")
+script = ExtResource("1_qhp3y")
+
+[node name="Connections_display" type="RichTextLabel" parent="HUD"]
+offset_left = 302.0
+offset_top = 78.0
+offset_right = 979.0
+offset_bottom = 147.0
+theme = ExtResource("3_c48au")
+script = ExtResource("5_fbx5n")
+
+[node name="Spores" type="Label" parent="HUD"]
+offset_left = 15.0
+offset_top = 13.0
+offset_right = 194.0
+offset_bottom = 74.0
+theme = ExtResource("3_c48au")
+text = "Spores: "
+
+[node name="Connections" type="Label" parent="HUD"]
+offset_left = 15.0
+offset_top = 75.0
+offset_right = 292.0
+offset_bottom = 136.0
+theme = ExtResource("3_c48au")
+text = "Connections:"
