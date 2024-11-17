@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="Mushroom Game"
+config/name="ExSpore"
 run/main_scene="res://Scenes/connections_screen.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://Assets/Mushrooms/bob_large.png"
 
 [autoload]
 

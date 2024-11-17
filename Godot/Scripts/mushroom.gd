@@ -26,6 +26,7 @@ extends TextureButton
 @onready var old_big
 @onready var old_small
 @onready var num = randi() % 3
+@onready var timer = 0
 
 
 func _ready():
@@ -45,14 +46,18 @@ func _ready():
 		old_small = k_old_small
 	else:
 		middle_big = d_middle_big
-		middle_small = d_middle_big
+		middle_small = d_middle_small
 		old_big = d_old_big
 		old_small = d_old_small
 
 func _button_pressed():
 	Global.points += 1 * (connections + 1)
 
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
+	timer += delta
+	if int(timer) % 2 == 0:
+		timer += 1
+		Global.points += connections
 	if Input.is_action_just_pressed("Upgrade") and hover == true and len(location_array) > 0 and Global.points >= Global.cost:
 		var obj = mushroom.instantiate()
 		obj.position = location_array[0]

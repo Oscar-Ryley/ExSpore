@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://cf3jiciq7peho"]
 
-[ext_resource type="Texture2D" uid="uid://ca53ttmcrf0ys" path="res://Assets/Temp/Untitled 9.png" id="1_0l41t"]
 [ext_resource type="Script" path="res://Scripts/points_display.gd" id="1_qhp3y"]
+[ext_resource type="Texture2D" uid="uid://brnjvai6fdxff" path="res://Assets/Background.png" id="1_t1bqx"]
 [ext_resource type="PackedScene" uid="uid://cvqrgpht3x5o0" path="res://Scenes/mushroom.tscn" id="2_w1ppx"]
 [ext_resource type="Theme" uid="uid://cqm3lugnxtx3s" path="res://Assets/Theme.tres" id="3_c48au"]
 [ext_resource type="Script" path="res://Scripts/connections_display.gd" id="5_fbx5n"]
@@ -12,7 +12,7 @@
 
 [node name="Sprite2D" type="Sprite2D" parent="Background"]
 position = Vector2(962, 538)
-texture = ExtResource("1_0l41t")
+texture = ExtResource("1_t1bqx")
 
 [node name="Starting_Mushroom" parent="." instance=ExtResource("2_w1ppx")]
 position = Vector2(915, 454)
