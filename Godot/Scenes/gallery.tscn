@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjram34owpuik"]
+
+[ext_resource type="Texture2D" uid="uid://0xhfxqmhphjb" path="res://Assets/gallery.png" id="1_le37q"]
+[ext_resource type="Theme" uid="uid://cqm3lugnxtx3s" path="res://Assets/Theme.tres" id="2_e1v4k"]
+[ext_resource type="Script" path="res://Scenes/Close.gd" id="2_jhbrf"]
+
+[node name="Gallery" type="Sprite2D"]
+position = Vector2(963, 539)
+texture = ExtResource("1_le37q")
+script = ExtResource("2_jhbrf")
+
+[node name="Close" type="Button" parent="."]
+offset_left = 518.0
+offset_top = -445.0
+offset_right = 625.0
+offset_bottom = -340.0
+theme = ExtResource("2_e1v4k")
+text = "       "
+
+[connection signal="pressed" from="Close" to="." method="_on_close_pressed"]

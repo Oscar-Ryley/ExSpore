@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cwoxgs6551tqh"]
 
-[ext_resource type="Script" path="res://Scenes/connection_line.gd" id="1_5mrr6"]
+[ext_resource type="Script" path="res://Scripts/connection_line.gd" id="1_5mrr6"]
 
 [node name="Connection_Line" type="Line2D"]
 z_index = -1

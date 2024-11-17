@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cf3jiciq7peho"]
+[gd_scene load_steps=15 format=3 uid="uid://cf3jiciq7peho"]
 
 [ext_resource type="Texture2D" uid="uid://xr6u07h5hg3k" path="res://Assets/daisy.png" id="1_a7ghn"]
 [ext_resource type="Script" path="res://Scripts/points_display.gd" id="1_qhp3y"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://jpdp2at6aw68" path="res://Assets/plain tree.png" id="9_4nhcu"]
 [ext_resource type="Script" path="res://Scripts/Cost_Display.gd" id="10_jycbj"]
 [ext_resource type="Texture2D" uid="uid://b4ce3jbp5pphf" path="res://Assets/button.png" id="11_8316p"]
+[ext_resource type="Script" path="res://Scripts/gallery_button.gd" id="14_dwp24"]
 
 [node name="Connections_Screen" type="Node2D"]
 
@@ -284,16 +285,27 @@ theme_override_font_sizes/normal_font_size = 40
 script = ExtResource("10_jycbj")
 
 [node name="Button" type="Sprite2D" parent="HUD"]
-position = Vector2(1849.5, 963)
+position = Vector2(1820.5, 958)
 scale = Vector2(0.278, 0.53)
 texture = ExtResource("11_8316p")
 
 [node name="Back" type="Button" parent="HUD"]
-offset_left = 1795.0
-offset_top = 930.0
-offset_right = 1901.0
-offset_bottom = 991.0
+offset_left = 1766.0
+offset_top = 925.0
+offset_right = 1872.0
+offset_bottom = 986.0
 theme = ExtResource("3_c48au")
 text = "Back"
 
+[node name="Gallery Button" type="Button" parent="HUD"]
+offset_left = 1732.0
+offset_top = 28.0
+offset_right = 1784.0
+offset_bottom = 89.0
+theme = ExtResource("3_c48au")
+text = "   
+"
+script = ExtResource("14_dwp24")
+
 [connection signal="pressed" from="HUD/Back" to="HUD/Points_Display" method="_on_back_pressed"]
+[connection signal="pressed" from="HUD/Gallery Button" to="HUD/Gallery Button" method="_on_pressed"]
