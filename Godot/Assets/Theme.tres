@@ -1,9 +1,19 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cqm3lugnxtx3s"]
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://cqm3lugnxtx3s"]
 
 [ext_resource type="FontFile" uid="uid://1oo8gfshrdx" path="res://Assets/Fonts/Gamja_Flower/GamjaFlower-Regular.ttf" id="1_pvk1m"]
+[ext_resource type="StyleBox" uid="uid://b61kri1sk1wyc" path="res://Assets/button_background.tres" id="1_uvctr"]
 
 [resource]
 default_font = ExtResource("1_pvk1m")
 default_font_size = 60
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_focus_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_color = Color(0.43, 0.32121, 0.2322, 1)
+Button/colors/font_hover_pressed_color = Color(0.431373, 0.321569, 0.231373, 1)
+Button/styles/disabled = ExtResource("1_uvctr")
+Button/styles/focus = ExtResource("1_uvctr")
+Button/styles/hover = ExtResource("1_uvctr")
+Button/styles/normal = ExtResource("1_uvctr")
+Button/styles/pressed = ExtResource("1_uvctr")
 Label/colors/font_color = Color(1, 1, 1, 1)
 RichTextLabel/colors/default_color = Color(1, 1, 1, 1)

@@ -25,8 +25,8 @@ texture = ExtResource("2_q20jk")
 
 [node name="Sprite2D" type="Sprite2D" parent="Background"]
 z_index = -1
-position = Vector2(984, 534)
-scale = Vector2(1.01875, 1.01667)
+position = Vector2(960, 539.999)
+scale = Vector2(1, 1)
 texture = ExtResource("1_t1bqx")
 
 [node name="Daisy2" type="Sprite2D" parent="Background"]
