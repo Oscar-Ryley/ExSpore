@@ -58,6 +58,7 @@ func _process(delta: float) -> void:
 	if int(timer) % 2 == 0:
 		timer += 1
 		Global.points += connections
+
 	if Input.is_action_just_pressed("Upgrade") and hover == true and len(location_array) > 0 and Global.points >= Global.cost:
 		var obj = mushroom.instantiate()
 		obj.position = location_array[0]
@@ -73,6 +74,7 @@ func _process(delta: float) -> void:
 		connection.leaf_node_name = obj.get_instance_id()
 		add_child(connection)
 		Global.connections_no += 1
+
 	if connections > 1:
 		texture_normal = middle_big
 		texture_pressed = middle_small
