@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cf3jiciq7peho"]
+[gd_scene load_steps=11 format=3 uid="uid://cf3jiciq7peho"]
 
 [ext_resource type="Texture2D" uid="uid://xr6u07h5hg3k" path="res://Assets/daisy.png" id="1_a7ghn"]
 [ext_resource type="Script" path="res://Scripts/points_display.gd" id="1_qhp3y"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://Scripts/connections_display.gd" id="5_fbx5n"]
 [ext_resource type="Texture2D" uid="uid://c0u7xvdconqe2" path="res://Assets/blossom tree.png" id="8_gvpdb"]
 [ext_resource type="Texture2D" uid="uid://jpdp2at6aw68" path="res://Assets/plain tree.png" id="9_4nhcu"]
+[ext_resource type="Script" path="res://Scripts/Cost_Display.gd" id="10_jycbj"]
 
 [node name="Connections_Screen" type="Node2D"]
 
@@ -220,22 +221,6 @@ position = Vector2(915, 454)
 
 [node name="HUD" type="Node2D" parent="."]
 
-[node name="Points_Display" type="RichTextLabel" parent="HUD"]
-offset_left = 188.0
-offset_top = 13.0
-offset_right = 999.0
-offset_bottom = 81.0
-theme = ExtResource("3_c48au")
-script = ExtResource("1_qhp3y")
-
-[node name="Connections_display" type="RichTextLabel" parent="HUD"]
-offset_left = 302.0
-offset_top = 78.0
-offset_right = 979.0
-offset_bottom = 147.0
-theme = ExtResource("3_c48au")
-script = ExtResource("5_fbx5n")
-
 [node name="Spores" type="Label" parent="HUD"]
 offset_left = 15.0
 offset_top = 13.0
@@ -244,6 +229,14 @@ offset_bottom = 74.0
 theme = ExtResource("3_c48au")
 text = "Spores: "
 
+[node name="Points_Display" type="RichTextLabel" parent="HUD"]
+offset_left = 188.0
+offset_top = 13.0
+offset_right = 572.0
+offset_bottom = 81.0
+theme = ExtResource("3_c48au")
+script = ExtResource("1_qhp3y")
+
 [node name="Connections" type="Label" parent="HUD"]
 offset_left = 15.0
 offset_top = 75.0
@@ -251,3 +244,29 @@ offset_right = 292.0
 offset_bottom = 136.0
 theme = ExtResource("3_c48au")
 text = "Connections:"
+
+[node name="Connections_display" type="RichTextLabel" parent="HUD"]
+offset_left = 302.0
+offset_top = 78.0
+offset_right = 479.0
+offset_bottom = 147.0
+theme = ExtResource("3_c48au")
+script = ExtResource("5_fbx5n")
+
+[node name="Cost for next connection" type="Label" parent="HUD"]
+offset_left = 7.0
+offset_top = 145.0
+offset_right = 395.0
+offset_bottom = 206.0
+theme = ExtResource("3_c48au")
+theme_override_font_sizes/font_size = 40
+text = "Cost for Next Connection:"
+
+[node name="Connections_display2" type="RichTextLabel" parent="HUD"]
+offset_left = 404.0
+offset_top = 146.0
+offset_right = 537.0
+offset_bottom = 215.0
+theme = ExtResource("3_c48au")
+theme_override_font_sizes/normal_font_size = 40
+script = ExtResource("10_jycbj")
