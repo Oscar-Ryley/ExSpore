@@ -67,7 +67,7 @@ func _process(delta: float) -> void:
 		add_child(obj)
 		connections += 1
 		Global.points -= Global.cost
-		Global.cost += 15
+		Global.cost = int(Global.cost * 1.25)
 		var connection = line.instantiate()
 		connection.add_point(obj.position)
 		connection.add_point(self.position)
